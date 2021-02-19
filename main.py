@@ -114,7 +114,7 @@ def show_labeling_tool(df: pd.DataFrame):
             text_label.grid(row=1, column=0, columnspan=2, padx=10, pady=5)
 
             if len(re.split("https?:\/\/", main_text)) > 1:
-                text_label.config(fg="skyblue", cursor="hand2")
+                text_label.config(fg="black", cursor="hand2")
                 font = Font(text_label, text_label.cget("font"))
                 font.configure(underline=True)
                 text_label.configure(font=font)
